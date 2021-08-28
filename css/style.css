@@ -58,6 +58,7 @@ body {
 .navbar__item:hover {
   background-color: #3596f5;
 }
+
 .navbar__link {
   color: #fff;
   text-decoration: none;
@@ -106,6 +107,10 @@ body {
 }
 
 .home__img path:hover {
+  opacity: 1;
+}
+
+path.current__floor {
   opacity: 1;
 }
 
