@@ -4,6 +4,11 @@ $(document).ready(function () {
   var counterUp = $(".counter__btn--up");
   var counterDown = $(".counter__btn--down");
 
+  var modal = $(".modal");
+  var modalCloseBtn = $(".modal__close-btn");
+
+  var viewFlatsBtn = $(".view__flats");
+
   //   Выбор этажа мышкой
   floorPath.on("mouseover", function () {
     floorPath.removeClass("current__floor");
@@ -38,4 +43,15 @@ $(document).ready(function () {
       $(`[data-floor=${usCurrentFloor}]`).toggleClass("current__floor");
     }
   });
+
+  floorPath.on("click", toggleModal);
+
+  modalCloseBtn.on("click", toggleModal);
+
+  viewFlatsBtn.on("click", toggleModal);
+
+  function toggleModal() {
+    modal.toggleClass("is__open");
+  }
+
 });
