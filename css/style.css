@@ -88,6 +88,7 @@ body {
   padding-top: 54px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .main__info {
@@ -275,4 +276,64 @@ path.current__floor {
 
 .flats path:hover {
   opacity: 1;
+}
+
+.footer {
+  background-color: #d7d7d7;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 56px;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__contacts--footer {
+  text-align-last: left;
+  margin-left: 37px;
+  margin-right: 50px;
+}
+
+.navbar__text--footer,
+.navbar__phone--footer {
+  color: #635854;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer__social-item {
+  margin-right: 15px;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-link {
+  fill: #635854;
+  transition: all 0.3s;
+  width: 20px;
+  height: 20px;
+}
+
+.footer__social-link:hover {
+  fill: #635854;
+  opacity: 0.5;
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+  display: inline-block;
+  margin-left: 20px;
 }
